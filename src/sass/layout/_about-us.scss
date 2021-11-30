@@ -1,0 +1,117 @@
+.about-us {
+  position: relative;
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    width: 634px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 824px;
+    padding-top: 67px;
+  }
+}
+
+.about-us__img {
+  @media screen and (max-width: 767.98px) {
+    position: relative;
+    top: -10px;
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    position: absolute;
+    top: 6px;
+    left: -35px;
+    width: 330px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 512px;
+    position: absolute;
+    top: 0;
+    left: -76px;
+  }
+}
+.about-us__wrap {
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    width: 336px;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 392px;
+    margin-left: auto;
+  }
+}
+
+.section-title__about-us {
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+}
+.about-us__text {
+  font-family: var(--font-montserrat);
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--primary-text-color);
+  @media screen and (min-width: 768px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    line-height: 1.25;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.22;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.about-us__text:not(:last-child) {
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 31px;
+  }
+}
+.about-us__btn {
+  background-color: transparent;
+  font-family: var(--font-caveat-brush);
+  font-size: 18px;
+  line-height: 3.61;
+  color: var(--accent-color);
+  border-color: transparent;
+  cursor: pointer;
+
+  transition: color var(--transition-time) $cubic, background-color var(--transition-time) $cubic,
+    fill var(--transition-time) $cubic;
+
+  &:hover,
+  &:focus {
+    color: var(--button-focus-color);
+  }
+}
+
+@media screen and (max-width: 1279.98px) {
+  #text2 {
+    display: none;
+  }
+}
+
+#toggle2 {
+  cursor: pointer;
+  font-family: var(--font-caveat-brush);
+  color: var(--accent-color);
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 3.61;
+  border: none;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}

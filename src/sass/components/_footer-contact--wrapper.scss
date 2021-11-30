@@ -1,0 +1,23 @@
+.footer-contact--wrapper{
+    background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 88px 65px;
+  background-image: url(/images/mobile/contact/contact-mobile-1x.png);
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url(/images/mobile/contact/contact-mobile-2x.png);
+        }
+  @media screen and (min-width: 768px) {
+      background-size: 147px 144px;
+    background-image: url(/images/tablet/contact/contact-tablet-1x.png);
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url(/images/tablet/contact/contact-tablet-2x.png);
+        }
+  }
+  @media screen and (min-width: 1280px) {
+    background-size: 319px 183px;
+    background-image: url(/images/desktop/contact/contact-desktop-1x.png);
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url(/images/desktop/contact/contact-desktop-2x.png);
+        }
+  }
+}

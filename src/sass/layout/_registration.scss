@@ -1,0 +1,265 @@
+.registration {
+    z-index: 2;
+    position: relative;
+    @media screen and (min-width: 768px) {
+        &::before{
+            content: '';
+            position: absolute;
+            z-index: -1;
+            left: 60%;
+            top: 45%;
+            background-repeat: no-repeat;
+            background-image: url(/images/tablet/registration/registration-pic-tablet-1x-2.png);
+            width: 286px;
+            height: 345px;
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                background-image: url(/images/tablet/registration/registration-pic-tablet-2x-2.png);
+                background-size: 286px 345px;
+                top: 49%;
+              }
+        }
+        
+    }
+    @media screen and (min-width: 1280px) {
+        &::before{
+            content: '';
+            position: absolute;
+            z-index: -1;
+            left: 60%;
+            top: 45%;
+            width: 341px;
+            height: 345px;
+            background-size: 395px 400px;
+            background-repeat: no-repeat;
+            background-image: url(/images/desktop/registration/registration-pic-desktop-1x-2.png);
+            
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                background-image: url(/images/desktop/registration/registration-pic-desktop-2x-2.png);
+                background-size: 431px 356px;
+                width: 500px;
+                top: 49%;
+              }
+        }
+        
+    }
+    
+    @media screen and (min-width: 768px) {
+        background-image: url(/images/tablet/registration/registration-pic-tablet-1x-1.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(/images/tablet/registration/registration-pic-tablet-2x-1.png);
+            background-repeat: no-repeat;
+            background-size: 235px 255px;
+          }
+    }
+    @media screen and (min-width: 1280px) {
+        background-image: url(/images/desktop/registration/registration-pic-desktop-1x-1.png);
+        background-repeat: no-repeat;
+        background-position: 70px;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(/images/desktop/registration/registration-pic-desktop-2x-1.png);
+            background-repeat: no-repeat;
+            background-size: 257px 255px;
+          }
+    }
+    &__main-container {
+
+        @media screen and (max-width: 767.98px) {
+        padding-top: 15px;
+        padding-bottom: 34px;
+        padding-left: 12px;
+        padding-right: 12px;
+        background-color: #FFFFF9;
+        box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+        border-radius: 150px 150px 0px 0px;
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 822px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        background: #FFFFF9;
+        box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+        border-radius: 150px;
+        background-color: var(--text-white-color);
+    
+        @media screen and (min-width: 768px) and (max-width: 1279.99px) {
+           
+            padding-left: 35px;
+        }
+    
+        @media screen and (max-width: 767.98px) {
+            display: inherit;
+            background: none;
+            box-shadow: none;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        
+    }
+
+    &__label {
+        margin-bottom: 13px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.2;
+
+        @media screen and (max-width: 1279.98px) {
+            font-size: 16px;
+        }
+    
+        @media screen and (max-width: 767.98px) {
+            text-align: center;
+        }
+    }
+
+    &__form {
+        display: flex;
+        @media screen and (max-width: 767.98px) {
+            flex-direction: column;
+        }
+
+        & .button {
+            cursor: pointer;
+        }
+        
+        &-button {
+            cursor: pointer;
+            @media screen and (max-width: 767.98px) {
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
+
+    &__form-fields {
+        display: flex;
+        flex-direction: column;
+        margin-right: 25px;
+    
+        @media screen and (max-width: 767.98px) {
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 25px;
+            width: 265px;
+        }
+    }
+
+    &__form-field {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid var(--accent-color);
+        outline: none;
+        font-size: 14px;
+        background-color: transparent;
+        @media screen and (min-width: 1280px) {
+            font-size: 16px;
+        }
+        
+    }
+    &__form-field:-webkit-autofill,
+    &__form-field:-webkit-autofill:hover,
+    &__form-field:-webkit-autofill:focus{
+        -webkit-text-fill-color: var(--icon-location-color);
+        -webkit-box-shadow: 0 0 0px 1000px var(--text-white-color) inset;
+    }
+    &__form-label:not(:first-child){
+        margin-top: 15px;
+
+        @media screen and (max-width: 767.98px) {
+            margin-top: 25px;
+        }
+    }
+    &__meta {
+        align-items: center;
+        margin-right: 30px;
+        padding-top: 19px;
+        padding-right: 30px;
+        border-right: 1px solid rgba(171, 129, 108, 0.5);
+        
+        @media screen and (max-width: 767.98px) {
+            border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+            border-right: none;
+            margin-right: 0;
+            padding-top: 0;
+            padding-right: 0;
+            padding-bottom: 20px;        
+        }
+    
+        &-date {
+            font-weight: medium;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: right;
+            margin-bottom: 30px;
+        
+            @media screen and (max-width: 767.98px) {
+                text-align: center;
+                margin-bottom: 25px;
+            }
+        }
+    
+        &-price {
+            font-weight: medium;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: right;
+        
+            @media screen and (max-width: 767.98px) {
+                text-align: center;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__section {
+        margin-top: 30px;
+        margin-bottom: 9px;
+    
+        @media screen and (min-width: 768px) and (max-width: 1279.99px) {
+            margin-top: 20px;
+            margin-bottom: 18px;
+        }
+    
+        @media screen and (max-width: 767.98px) {
+            margin-top: 11px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+input::placeholder {
+    color: rgba(171, 129, 108, 0.5);
+}
+
+input:not(:placeholder-shown):required:invalid {
+    border-color: red;
+}
+input:not(:placeholder-shown):required:valid {
+    border-color: green;
+}
+.registration__title{
+    margin-bottom: 10px;
+}
+.registration__btn{
+    padding: 12px 45px;
+
+    @media screen and(min-width:786px) {
+        padding: 12px 40px;
+    }
+
+    @media screen and(min-width:1280px) {
+        padding: 12px 60px;
+    }
+}
+
+.registration-section{
+    padding-top: 30px;
+}

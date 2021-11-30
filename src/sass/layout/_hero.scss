@@ -1,0 +1,126 @@
+.hero__container {
+  @media screen and (max-width: 767.98px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+   &::before{
+    content: "";
+    position: absolute;
+    width: 377px;
+    height: 396px;
+    top: 0;
+    left: 36%;
+    background-image: url(/images/tablet/hero/hero-donuts-tablet-1x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url(/images/tablet/hero/hero-donuts-tablet-2x.png);
+          background-repeat: no-repeat;
+        }
+        @media screen and (min-width: 976px) and (max-width: 1280px){
+          left: 40%;
+        }
+        
+   }
+  }
+}
+.hero__text {
+  margin-bottom: 0;
+  font-family: var(--font-caveat-brush);
+  font-style: normal;
+  font-size: 30px;
+  line-height: 1.27;
+  text-align: center;
+  margin-bottom: 5px;
+  @media screen and (max-width: 767.98px) {
+    max-width: 253px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 225px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 490px;
+    margin-bottom: 15px;
+    font-size: 64px;
+    line-height: 65px;
+    text-align: left;
+  }
+
+  color: var(--primary-text-color);
+}
+
+.hero__subtext {
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 37px;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    margin-bottom: 26px;
+  }
+}
+.hero__social-list {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    justify-content: left;
+  }
+}
+
+.hero__social-item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.hero {
+  position: relative;
+  z-index: 3;
+  padding-top: 30px;
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 56px;
+    background-image: url(/images/desktop/hero/hero-spoon-desktop-1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left 60px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/desktop/hero/hero-spoon-desktop-2x.png);
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.hero__link {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 45px;
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    margin-bottom: 31px;
+  }
+  @media screen and (max-width: 1279.98px) {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+
+}
+
+
+
+.social-link {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+
+}

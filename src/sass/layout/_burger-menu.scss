@@ -1,0 +1,128 @@
+.menu-button {
+  position: absolute;
+  top: 9px;
+  right: 15px;
+  padding: 0;
+  z-index: 105;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &--close {
+    position: absolute;
+    right: 6px;
+  }
+  @media screen and (min-width: 768px) {
+    // position: relative;
+    // top: 0px;
+    // right: 0px;
+    position: absolute;
+    top: 35%;
+    right: 15%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+
+  &.is-open {
+    position: fixed;
+    top: 9px;
+    right: 15px;
+
+    @media screen and (min-width: 768px) {
+      position: fixed;
+      top: 3%;
+      right: 15%;
+    }
+  }
+}
+
+.menu-button__icon-menu {
+  fill: var(--primary-text-color);
+}
+
+.menu-button__icon-close {
+  display: none;
+
+  fill: var(--primary-text-color);
+}
+
+.is-open {
+  .menu-button__icon-close {
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+
+  .menu-button__icon-menu {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: rgba(254, 243, 228, 0.9);
+  transition: right 0.5s;
+
+  &.is-open {
+    right: 0;
+  }
+}
+
+.menu__navigation {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.menu-nav {
+  margin-top: 40px;
+  @media screen and (max-height: 410.98px) {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
+@media screen and (max-height: 410.98px) {
+  .menu-nav__item:not(:last-child) {
+    border-right: 1px solid var(--primary-text-color);
+  }
+}
+.menu__logo-icon {
+  fill: var(--primary-text-color);
+}
+
+.menu-nav__item + .menu-nav__item {
+  margin-top: 45px;
+  @media screen and (max-height: 410.98px) {
+    margin-top: 0;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+  }
+}
+.menu-nav__link {
+  padding: 20px 20px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.21;
+  color: var(--primary-text-color);
+
+  text-decoration: none;
+  transition: color var(--transition-time) $cubic;
+  @media screen and (max-height: 410.98px) {
+    padding: 20px 10px;
+  }
+  &:hover,
+  &:focus {
+    // color: var(--mob-menu-hover-color);
+    color: var(--button-focus-color);
+  }
+}

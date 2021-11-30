@@ -1,0 +1,13 @@
+.social-link{
+   fill: var(--primary-text-color);
+   transition: fill var(--animation-effect);
+}
+
+.social-link:hover,
+.social-link:focus{
+   fill: var(--accent-color);
+}
+
+.social-link:not(:last-child) {
+   margin-right: 12px;
+}

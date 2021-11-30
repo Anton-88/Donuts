@@ -1,0 +1,53 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; 
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+
+  background-color: var(--main-background-color);
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    background-color: var(--main-background-color);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+ul li {
+  margin-top: 0;
+  margin-right: 0;
+}
+ 
+img {
+  width: 100%;
+  display: block;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
