@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Lelikboss.github.io/team-project-20.1",
+  "homepage": "https://Anton-88.github.io/Donuts",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-project-20.1/"
+    "build": "parcel build src/*.html --public-url /Donuts/"
   },
   "repository": {
     "type": "git",
